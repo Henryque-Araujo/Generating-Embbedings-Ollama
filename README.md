@@ -1,46 +1,77 @@
-# 🔠 Gerando Embeddings Localmente com Ollama
+# 🔠 Generating Embeddings Locally with Ollama
 
-Este projeto demonstra como gerar vetores de embeddings a partir de textos simples utilizando o modelo `nomic-embed-text`, executado localmente com a ferramenta Ollama.
+This project demonstrates how to generate text embeddings locally using the `nomic-embed-text` model powered by Ollama.
 
-Através de um script em Python, o usuário conecta-se ao Ollama via API local, envia textos curtos e recebe vetores numéricos (embeddings) que representam semanticamente cada frase.
-
----
-
-## 🎯 Objetivo
-
-- Instalar e executar o Ollama localmente.
-- Usar o modelo `nomic-embed-text` para gerar embeddings.
-- Criar um script em Python para enviar textos e receber os vetores.
-- Exibir os resultados no terminal de forma resumida.
-- Armazenar os embeddings em memória para possíveis usos futuros (como classificação, busca semântica, etc).
+Through a Python script, it connects to the local Ollama API, sends short text inputs, and returns numerical vectors (embeddings) that semantically represent each sentence.
 
 ---
 
-## 🧰 Tecnologias Utilizadas
+## 🎯 Purpose
 
-- 🐍 **Python 3.8+**
-- 🔗 **Ollama** (API local para modelos de linguagem)
-- 📦 **requests** (para chamadas HTTP)
-- 🧠 **nomic-embed-text** (modelo de embeddings open-source)
-
----
-
-## ⚙️ Requisitos
-
-Antes de iniciar, certifique-se de ter os seguintes itens instalados:
-
-- [Python 3.8 ou superior](https://www.python.org/)
-- [Ollama](https://ollama.com/download) instalado e funcionando localmente
-- Git (opcional, mas recomendado)
+* Set up and run Ollama locally
+* Generate embeddings using the `nomic-embed-text` model
+* Build a Python script to send text inputs and retrieve embeddings
+* Display results in a clean and readable format in the terminal
+* Store embeddings in memory for future use (e.g., semantic search, classification)
 
 ---
 
-## 🛠️ Instalação e Execução
+## 🧰 Tech Stack
 
-### 1. Clone o repositório
+* 🐍 **Python 3.8+**
+* 🔗 **Ollama** (local LLM runtime)
+* 📦 **requests** (HTTP requests)
+* 🧠 **nomic-embed-text** (open-source embedding model)
 
-### 2. No terminal, use pip install requests
+---
 
-### 3.Após isso, digite "ollama run nomic-embed-text" e dê run!
+## ⚙️ Requirements
 
+Make sure you have the following installed:
 
+* Python 3.8 or higher
+* Ollama installed and running locally
+* Git (optional, but recommended)
+
+---
+
+## 🛠️ Setup & Usage
+
+### 1. Clone the repository
+
+```bash
+git clone <your-repo-url>
+cd <your-repo-name>
+```
+
+### 2. Install dependencies
+
+```bash
+pip install requests
+```
+
+### 3. Run the embedding model
+
+```bash
+ollama run nomic-embed-text
+```
+
+---
+
+## 💡 How It Works
+
+The script sends text data to the local Ollama API endpoint, which processes it using the embedding model and returns a vector representation. These embeddings can be used for tasks like:
+
+* Semantic search
+* Text similarity
+* Classification
+* Clustering
+
+---
+
+## 🚀 Future Improvements
+
+* Persist embeddings in a database (e.g., SQLite, PostgreSQL, or vector DBs)
+* Build a semantic search interface
+* Integrate with APIs or web applications
+* Add batch processing for large datasets
